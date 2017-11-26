@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		075B7951C4698FEFCD8C6D2EAE2F41DA /* Pods-ARKitCarGeolocation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8255DA369765B0279DB1943F5C610E /* Pods-ARKitCarGeolocation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		157001085DDB526C12CC9BE23E3F372F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1923459DCB4C0CC65BF72102370A04DC /* PusherConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD25F744ACA2D697417C3AD663A77894 /* PusherConnection.swift */; };
+		21B99E657A4237DE3BB371133B56E57E /* Starscream.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E5FCB6FF28260B97CC5A59EF262BDF /* Starscream.swift */; };
+		21D7D20EA81D925BB43A1610544E817C /* TaskQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF841BE8753EF1402C77B3C16CAF8AC /* TaskQueue.swift */; };
+		30D77FB9A0CC51C8CE2764F5FF1CD190 /* PusherSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8BE84D63DBA3E95A26E23025CAAD8A /* PusherSwift.swift */; };
+		8FF446F86DE75D0AE0AFC3B68D08F46A /* PusherPresenceChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB4868E0A6B4B04F55265D84262D50D /* PusherPresenceChannel.swift */; };
+		936CB9BFCB84D5782F40C211AE6FAE51 /* PusherChannels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E881231E6BD1D48ABD7652D0100EFE12 /* PusherChannels.swift */; };
+		9786F8C6D22B144E2ACB016BE3682F0B /* CryptoSwiftHMACModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E7B47CE03EFE2CE5F62C114E7138EA /* CryptoSwiftHMACModule.swift */; };
+		9A86239DB44D5670EFC32A0B17B4DA1C /* PusherSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 108926EE673ABD7B393FE54E4AEB183A /* PusherSwift-dummy.m */; };
+		9D7D701F1180A40FBE956422524DA43C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A7C48D43CB2B92E06221E57A98D26FEA /* PusherWebsocketDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0A34DDB9120BA091D845DBDD3E1CB5 /* PusherWebsocketDelegate.swift */; };
+		BABE8DD1EF08900CE84E25A603C7C9AA /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2B429240307CED9088556EA87A2DF8 /* Reachability.swift */; };
+		BD0D7871644A5B5062B40E07F9F9EC4D /* PusherDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F71645DCAF5ADC93A8B1D48C5DDEA /* PusherDelegate.swift */; };
+		BF48B62C885ED2E7640AA721A32132DD /* PusherSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FF4787645454290FD31C353D7AD8FCB /* PusherSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3DCE7DE33DA94D8537D8EB6BCC5A317 /* AuthRequestBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79643D4C8DF70B0E25D0D136443415DC /* AuthRequestBuilderProtocol.swift */; };
+		C7702E0A9702BE19CD4BF527173A945D /* PusherClientOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298A783CEE78BE30198DFADA4493733C /* PusherClientOptions.swift */; };
+		CCE80CE4C16CA224FC15E5B470058553 /* ObjectiveC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B60CAFC04CE73F700CCE3D37DD50267 /* ObjectiveC.swift */; };
+		CCFFC3F76E88EEDA4FB01A9C91D81F9B /* Authorizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC942076E847B9EDC6A6EBDDCCCD19F3 /* Authorizer.swift */; };
+		CDD87613B36103859C9D0911681C8056 /* NativePusher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CA2104896833D15535CF3D837CBFA7 /* NativePusher.swift */; };
+		D9AAEF776BFDF5D236BD9BB23FA93D0C /* PusherChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D72F1B212772063DB962F0AAA1D282 /* PusherChannel.swift */; };
+		E9EFF651F830E8ACF4277F7AB87299DD /* PusherGlobalChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B51F0192C79E249E6A360115A280B4 /* PusherGlobalChannel.swift */; };
+		F54FF6A4FB79B02627ACA4645B5F54CC /* Pods-ARKitCarGeolocation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 23338BAFE7F33641761B598B485A5EC1 /* Pods-ARKitCarGeolocation-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6801615FF1CD85050C0D7A46199711CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61377E9E593DBBAF7B140AF917B617E4;
+			remoteInfo = PusherSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		108926EE673ABD7B393FE54E4AEB183A /* PusherSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PusherSwift-dummy.m"; sourceTree = "<group>"; };
+		1C8255DA369765B0279DB1943F5C610E /* Pods-ARKitCarGeolocation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ARKitCarGeolocation-umbrella.h"; sourceTree = "<group>"; };
+		21711A69CABC4B5D3589C382288CCD0F /* Pods_ARKitCarGeolocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ARKitCarGeolocation.framework; path = "Pods-ARKitCarGeolocation.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23338BAFE7F33641761B598B485A5EC1 /* Pods-ARKitCarGeolocation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ARKitCarGeolocation-dummy.m"; sourceTree = "<group>"; };
+		298A783CEE78BE30198DFADA4493733C /* PusherClientOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherClientOptions.swift; path = Sources/PusherClientOptions.swift; sourceTree = "<group>"; };
+		2FF4787645454290FD31C353D7AD8FCB /* PusherSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PusherSwift-umbrella.h"; sourceTree = "<group>"; };
+		32E4D3B64F4FEB85E2D73670A11FD336 /* Pods-ARKitCarGeolocation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARKitCarGeolocation.release.xcconfig"; sourceTree = "<group>"; };
+		34B51F0192C79E249E6A360115A280B4 /* PusherGlobalChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherGlobalChannel.swift; path = Sources/PusherGlobalChannel.swift; sourceTree = "<group>"; };
+		36299E489F450FEB34818B37C2336A3F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FF841BE8753EF1402C77B3C16CAF8AC /* TaskQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskQueue.swift; path = Sources/TaskQueue.swift; sourceTree = "<group>"; };
+		48E7B47CE03EFE2CE5F62C114E7138EA /* CryptoSwiftHMACModule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CryptoSwiftHMACModule.swift; path = Sources/CryptoSwiftHMACModule.swift; sourceTree = "<group>"; };
+		4C2B429240307CED9088556EA87A2DF8 /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Sources/Reachability.swift; sourceTree = "<group>"; };
+		5E9D4E7E2D2E04B9A88CD2650A8A304C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		694CA120E7B2644B32F3E7A9EE6EC025 /* Pods-ARKitCarGeolocation-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ARKitCarGeolocation-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6A4F71645DCAF5ADC93A8B1D48C5DDEA /* PusherDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherDelegate.swift; path = Sources/PusherDelegate.swift; sourceTree = "<group>"; };
+		6BB4868E0A6B4B04F55265D84262D50D /* PusherPresenceChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherPresenceChannel.swift; path = Sources/PusherPresenceChannel.swift; sourceTree = "<group>"; };
+		79643D4C8DF70B0E25D0D136443415DC /* AuthRequestBuilderProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthRequestBuilderProtocol.swift; path = Sources/AuthRequestBuilderProtocol.swift; sourceTree = "<group>"; };
+		7B60CAFC04CE73F700CCE3D37DD50267 /* ObjectiveC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectiveC.swift; path = Sources/ObjectiveC.swift; sourceTree = "<group>"; };
+		7D766CF91C0C2FA7CCED9F83F2FF7FE5 /* Pods-ARKitCarGeolocation-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARKitCarGeolocation-resources.sh"; sourceTree = "<group>"; };
+		80D72F1B212772063DB962F0AAA1D282 /* PusherChannel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherChannel.swift; path = Sources/PusherChannel.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9744F28A76911ED5A949F0B30FA30B1A /* PusherSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PusherSwift.framework; path = PusherSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC90F1711CD42F16EB87E47084270041 /* PusherSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PusherSwift.xcconfig; sourceTree = "<group>"; };
+		AC942076E847B9EDC6A6EBDDCCCD19F3 /* Authorizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authorizer.swift; path = Sources/Authorizer.swift; sourceTree = "<group>"; };
+		B3EB454F2C53BFA22A752E5A97DC65CA /* Pods-ARKitCarGeolocation-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ARKitCarGeolocation-acknowledgements.plist"; sourceTree = "<group>"; };
+		BE8BE84D63DBA3E95A26E23025CAAD8A /* PusherSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherSwift.swift; path = Sources/PusherSwift.swift; sourceTree = "<group>"; };
+		D3CA2104896833D15535CF3D837CBFA7 /* NativePusher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativePusher.swift; path = Sources/NativePusher.swift; sourceTree = "<group>"; };
+		D8E5FCB6FF28260B97CC5A59EF262BDF /* Starscream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Starscream.swift; path = Sources/Starscream.swift; sourceTree = "<group>"; };
+		DCD3F9C1130512A7E6A2A3BC06EF7159 /* PusherSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PusherSwift-prefix.pch"; sourceTree = "<group>"; };
+		E002ED873EDB37FAC8844ADBEE23D014 /* PusherSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PusherSwift.modulemap; sourceTree = "<group>"; };
+		E5B3836E542EE2B236DF023F5D5DFE27 /* Pods-ARKitCarGeolocation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARKitCarGeolocation.debug.xcconfig"; sourceTree = "<group>"; };
+		E881231E6BD1D48ABD7652D0100EFE12 /* PusherChannels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherChannels.swift; path = Sources/PusherChannels.swift; sourceTree = "<group>"; };
+		F6D16E8BCBCFFB8756CC949AA226FB39 /* Pods-ARKitCarGeolocation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ARKitCarGeolocation.modulemap"; sourceTree = "<group>"; };
+		FB0A34DDB9120BA091D845DBDD3E1CB5 /* PusherWebsocketDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherWebsocketDelegate.swift; path = Sources/PusherWebsocketDelegate.swift; sourceTree = "<group>"; };
+		FD25F744ACA2D697417C3AD663A77894 /* PusherConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherConnection.swift; path = Sources/PusherConnection.swift; sourceTree = "<group>"; };
+		FDC057C26455F4DD5C3B9EF9B867950A /* Pods-ARKitCarGeolocation-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARKitCarGeolocation-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D81481EADE7093E533BCD5BFA3D5365B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D7D701F1180A40FBE956422524DA43C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E587411B9C3E58DAB8C790EA5105D37C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157001085DDB526C12CC9BE23E3F372F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		352530756B8EEC45EB8B476A8E0C8FC2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				69E3EA0A09F8D8FB40AE0556DEFE5D6D /* Pods-ARKitCarGeolocation */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5B385EDA3ED3B6619E336068845A799E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DDFD45DBB42CECCC2CE1C426068B1FC /* PusherSwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		69E3EA0A09F8D8FB40AE0556DEFE5D6D /* Pods-ARKitCarGeolocation */ = {
+			isa = PBXGroup;
+			children = (
+				36299E489F450FEB34818B37C2336A3F /* Info.plist */,
+				F6D16E8BCBCFFB8756CC949AA226FB39 /* Pods-ARKitCarGeolocation.modulemap */,
+				694CA120E7B2644B32F3E7A9EE6EC025 /* Pods-ARKitCarGeolocation-acknowledgements.markdown */,
+				B3EB454F2C53BFA22A752E5A97DC65CA /* Pods-ARKitCarGeolocation-acknowledgements.plist */,
+				23338BAFE7F33641761B598B485A5EC1 /* Pods-ARKitCarGeolocation-dummy.m */,
+				FDC057C26455F4DD5C3B9EF9B867950A /* Pods-ARKitCarGeolocation-frameworks.sh */,
+				7D766CF91C0C2FA7CCED9F83F2FF7FE5 /* Pods-ARKitCarGeolocation-resources.sh */,
+				1C8255DA369765B0279DB1943F5C610E /* Pods-ARKitCarGeolocation-umbrella.h */,
+				E5B3836E542EE2B236DF023F5D5DFE27 /* Pods-ARKitCarGeolocation.debug.xcconfig */,
+				32E4D3B64F4FEB85E2D73670A11FD336 /* Pods-ARKitCarGeolocation.release.xcconfig */,
+			);
+			name = "Pods-ARKitCarGeolocation";
+			path = "Target Support Files/Pods-ARKitCarGeolocation";
+			sourceTree = "<group>";
+		};
+		6DDFD45DBB42CECCC2CE1C426068B1FC /* PusherSwift */ = {
+			isa = PBXGroup;
+			children = (
+				AC942076E847B9EDC6A6EBDDCCCD19F3 /* Authorizer.swift */,
+				79643D4C8DF70B0E25D0D136443415DC /* AuthRequestBuilderProtocol.swift */,
+				48E7B47CE03EFE2CE5F62C114E7138EA /* CryptoSwiftHMACModule.swift */,
+				D3CA2104896833D15535CF3D837CBFA7 /* NativePusher.swift */,
+				7B60CAFC04CE73F700CCE3D37DD50267 /* ObjectiveC.swift */,
+				80D72F1B212772063DB962F0AAA1D282 /* PusherChannel.swift */,
+				E881231E6BD1D48ABD7652D0100EFE12 /* PusherChannels.swift */,
+				298A783CEE78BE30198DFADA4493733C /* PusherClientOptions.swift */,
+				FD25F744ACA2D697417C3AD663A77894 /* PusherConnection.swift */,
+				6A4F71645DCAF5ADC93A8B1D48C5DDEA /* PusherDelegate.swift */,
+				34B51F0192C79E249E6A360115A280B4 /* PusherGlobalChannel.swift */,
+				6BB4868E0A6B4B04F55265D84262D50D /* PusherPresenceChannel.swift */,
+				BE8BE84D63DBA3E95A26E23025CAAD8A /* PusherSwift.swift */,
+				FB0A34DDB9120BA091D845DBDD3E1CB5 /* PusherWebsocketDelegate.swift */,
+				4C2B429240307CED9088556EA87A2DF8 /* Reachability.swift */,
+				D8E5FCB6FF28260B97CC5A59EF262BDF /* Starscream.swift */,
+				3FF841BE8753EF1402C77B3C16CAF8AC /* TaskQueue.swift */,
+				709B35571D83177D623141A0FC2005BA /* Support Files */,
+			);
+			name = PusherSwift;
+			path = PusherSwift;
+			sourceTree = "<group>";
+		};
+		709B35571D83177D623141A0FC2005BA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E9D4E7E2D2E04B9A88CD2650A8A304C /* Info.plist */,
+				E002ED873EDB37FAC8844ADBEE23D014 /* PusherSwift.modulemap */,
+				AC90F1711CD42F16EB87E47084270041 /* PusherSwift.xcconfig */,
+				108926EE673ABD7B393FE54E4AEB183A /* PusherSwift-dummy.m */,
+				DCD3F9C1130512A7E6A2A3BC06EF7159 /* PusherSwift-prefix.pch */,
+				2FF4787645454290FD31C353D7AD8FCB /* PusherSwift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PusherSwift";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				5B385EDA3ED3B6619E336068845A799E /* Pods */,
+				F597364DB572F3C292F52EDF60E0F342 /* Products */,
+				352530756B8EEC45EB8B476A8E0C8FC2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F597364DB572F3C292F52EDF60E0F342 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21711A69CABC4B5D3589C382288CCD0F /* Pods_ARKitCarGeolocation.framework */,
+				9744F28A76911ED5A949F0B30FA30B1A /* PusherSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1E036E1F96B9B276845DE748225061B1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				075B7951C4698FEFCD8C6D2EAE2F41DA /* Pods-ARKitCarGeolocation-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62209A80BABE080331480FADD809CBC9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF48B62C885ED2E7640AA721A32132DD /* PusherSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		53DD63519E8EDC7945BA5EECC7F266B3 /* Pods-ARKitCarGeolocation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C73B4B7C404EF146ACB35AAD6E7AF75 /* Build configuration list for PBXNativeTarget "Pods-ARKitCarGeolocation" */;
+			buildPhases = (
+				C5A9AADBBDA4BDCF78929B1C9CBCA9C3 /* Sources */,
+				E587411B9C3E58DAB8C790EA5105D37C /* Frameworks */,
+				1E036E1F96B9B276845DE748225061B1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AFC3866EBBC5FDC505568AC2FFEB852E /* PBXTargetDependency */,
+			);
+			name = "Pods-ARKitCarGeolocation";
+			productName = "Pods-ARKitCarGeolocation";
+			productReference = 21711A69CABC4B5D3589C382288CCD0F /* Pods_ARKitCarGeolocation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		61377E9E593DBBAF7B140AF917B617E4 /* PusherSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 941EDF394EEF6788C45C89B7B42F9495 /* Build configuration list for PBXNativeTarget "PusherSwift" */;
+			buildPhases = (
+				2BE6FA4FD7A89FB2359F1C9B114949EF /* Sources */,
+				D81481EADE7093E533BCD5BFA3D5365B /* Frameworks */,
+				62209A80BABE080331480FADD809CBC9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PusherSwift;
+			productName = PusherSwift;
+			productReference = 9744F28A76911ED5A949F0B30FA30B1A /* PusherSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F597364DB572F3C292F52EDF60E0F342 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53DD63519E8EDC7945BA5EECC7F266B3 /* Pods-ARKitCarGeolocation */,
+				61377E9E593DBBAF7B140AF917B617E4 /* PusherSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BE6FA4FD7A89FB2359F1C9B114949EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCFFC3F76E88EEDA4FB01A9C91D81F9B /* Authorizer.swift in Sources */,
+				C3DCE7DE33DA94D8537D8EB6BCC5A317 /* AuthRequestBuilderProtocol.swift in Sources */,
+				9786F8C6D22B144E2ACB016BE3682F0B /* CryptoSwiftHMACModule.swift in Sources */,
+				CDD87613B36103859C9D0911681C8056 /* NativePusher.swift in Sources */,
+				CCE80CE4C16CA224FC15E5B470058553 /* ObjectiveC.swift in Sources */,
+				D9AAEF776BFDF5D236BD9BB23FA93D0C /* PusherChannel.swift in Sources */,
+				936CB9BFCB84D5782F40C211AE6FAE51 /* PusherChannels.swift in Sources */,
+				C7702E0A9702BE19CD4BF527173A945D /* PusherClientOptions.swift in Sources */,
+				1923459DCB4C0CC65BF72102370A04DC /* PusherConnection.swift in Sources */,
+				BD0D7871644A5B5062B40E07F9F9EC4D /* PusherDelegate.swift in Sources */,
+				E9EFF651F830E8ACF4277F7AB87299DD /* PusherGlobalChannel.swift in Sources */,
+				8FF446F86DE75D0AE0AFC3B68D08F46A /* PusherPresenceChannel.swift in Sources */,
+				9A86239DB44D5670EFC32A0B17B4DA1C /* PusherSwift-dummy.m in Sources */,
+				30D77FB9A0CC51C8CE2764F5FF1CD190 /* PusherSwift.swift in Sources */,
+				A7C48D43CB2B92E06221E57A98D26FEA /* PusherWebsocketDelegate.swift in Sources */,
+				BABE8DD1EF08900CE84E25A603C7C9AA /* Reachability.swift in Sources */,
+				21B99E657A4237DE3BB371133B56E57E /* Starscream.swift in Sources */,
+				21D7D20EA81D925BB43A1610544E817C /* TaskQueue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5A9AADBBDA4BDCF78929B1C9CBCA9C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F54FF6A4FB79B02627ACA4645B5F54CC /* Pods-ARKitCarGeolocation-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AFC3866EBBC5FDC505568AC2FFEB852E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PusherSwift;
+			target = 61377E9E593DBBAF7B140AF917B617E4 /* PusherSwift */;
+			targetProxy = 6801615FF1CD85050C0D7A46199711CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12C4B864767C59600DBFA238F1E2F8BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		39DFC986159DEB703A27AF248F1E4C80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC90F1711CD42F16EB87E47084270041 /* PusherSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PusherSwift/PusherSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PusherSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PusherSwift/PusherSwift.modulemap";
+				PRODUCT_NAME = PusherSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4F88D477327BFD6FF8B860330706C3E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32E4D3B64F4FEB85E2D73670A11FD336 /* Pods-ARKitCarGeolocation.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ARKitCarGeolocation/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ARKitCarGeolocation/Pods-ARKitCarGeolocation.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ARKitCarGeolocation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		59F0302F2371FCC6B73EF0A418D40734 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		86FEEDACD42A981C1B7899C7912FB379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5B3836E542EE2B236DF023F5D5DFE27 /* Pods-ARKitCarGeolocation.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ARKitCarGeolocation/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ARKitCarGeolocation/Pods-ARKitCarGeolocation.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ARKitCarGeolocation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9583C10450E3FA4E1FB3E31F74CFB37E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC90F1711CD42F16EB87E47084270041 /* PusherSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PusherSwift/PusherSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PusherSwift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PusherSwift/PusherSwift.modulemap";
+				PRODUCT_NAME = PusherSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59F0302F2371FCC6B73EF0A418D40734 /* Debug */,
+				12C4B864767C59600DBFA238F1E2F8BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C73B4B7C404EF146ACB35AAD6E7AF75 /* Build configuration list for PBXNativeTarget "Pods-ARKitCarGeolocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86FEEDACD42A981C1B7899C7912FB379 /* Debug */,
+				4F88D477327BFD6FF8B860330706C3E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		941EDF394EEF6788C45C89B7B42F9495 /* Build configuration list for PBXNativeTarget "PusherSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39DFC986159DEB703A27AF248F1E4C80 /* Debug */,
+				9583C10450E3FA4E1FB3E31F74CFB37E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
